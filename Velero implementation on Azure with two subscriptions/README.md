@@ -23,7 +23,7 @@ Create new container
 $ az storage container create -n sandbox --public-access off --account-name velerobackupstoracc
 ```
 
-###2. Download vmware-tanzy/velero repository 
+### 2. Download vmware-tanzy/velero repository 
 ```
 $ git clone https://github.com/vmware-tanzu/velero.git
 ```
@@ -184,4 +184,5 @@ $ velero schedule create -n <NAMESPACE-VELERO-INSTALLATION> <SCHEDULE-NAME> \
 ```
 ### 10. Bibliography
 https://github.com/vmware-tanzu/helm-charts
+
 https://github.com/vmware-tanzu/velero/tree/v1.12.0
