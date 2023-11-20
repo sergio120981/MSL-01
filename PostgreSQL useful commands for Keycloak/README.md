@@ -23,7 +23,7 @@ root=# \dt                        # list tables, by default schema public.
 root=# select name from realm;    # list the REALM implemented into Keycloak
        name       
 -------------------
- smarthome-sandbox
+ sandbox
  master
 (2 rows)
  
