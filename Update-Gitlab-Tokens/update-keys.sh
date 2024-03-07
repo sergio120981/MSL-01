@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-CF=/usr/local/etc/keys.conf
+CF=/usr/local/etc/config.conf
 
 DIR=$(yq .config.directory ${CF})
 USER=$(yq .config.user ${CF})
