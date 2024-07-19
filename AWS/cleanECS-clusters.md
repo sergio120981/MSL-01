@@ -1,3 +1,4 @@
+```
 region=AFECTED_REGION
 profile=AWS_PROFILE
 aws --profile=$profile ecs list-clusters --region=$region --output text | awk '{print $2}'  > "clusters-$region.txt"
@@ -8,3 +9,4 @@ while IFS= read -r cluster; do
   # end of LOOP
   aws --profile=$profile ecs delete-cluster --region=$region --cluster=$cluster 1>/dev/null
 done < "clusters-$region.txt"
+```
